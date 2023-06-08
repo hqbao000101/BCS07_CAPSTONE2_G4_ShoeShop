@@ -1,7 +1,8 @@
 // ! import
 @import "./helpers/variables";
+@import "./helpers/global";
 @import "./helpers/animations";
-@import "./helpers/helpers";
+@import "./helpers/mixins";
 @import "./themes/dark";
 @import "./pages/detail";
 @import "./pages/register";

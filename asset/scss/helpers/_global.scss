@@ -1,3 +1,4 @@
+// ! global
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +16,12 @@ ul li {
 
 a {
   text-decoration: none;
-  color: #222222;
+  color: $text-primary;
 }
 
+// ! Classes - Extend
 .dark-theme {
-  background-color: #1e272e;
+  background-color: $bg-dark-theme;
   color: #fff;
 }
 
@@ -27,4 +29,4 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}

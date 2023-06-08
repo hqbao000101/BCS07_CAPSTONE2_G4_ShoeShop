@@ -1,0 +1,17 @@
+// ! Mixins
+@mixin testStyle($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin buttonStyle($bg-color, $radius, $border, $padding, $bg-hover, $border-hover) {
+  background-color: $bg-color;
+  border-radius: $radius;
+  border: $border;
+  padding: $padding;
+  &:hover {
+    background-color: $bg-hover;
+    border-color: $border-hover;
+  }
+}
