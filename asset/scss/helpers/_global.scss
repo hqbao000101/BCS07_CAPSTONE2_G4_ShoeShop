@@ -8,6 +8,7 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  font-size: $fs-12;
 }
 
 ul li {
@@ -27,6 +28,15 @@ a {
 
 .flex-center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.visible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.width-0 {
+  width: 0;
 }

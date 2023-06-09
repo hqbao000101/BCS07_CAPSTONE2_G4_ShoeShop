@@ -1,9 +1,9 @@
 // ! Color
 $primary-color: #00dfa2;
-$primary-hover: #5fff31;
+$primary-hover: #2ed573;
 $navbar-bg-color: #041963;
-$header-logo-bg: #031364;
-$header-bg-color: #03177e;
+$header-icon-bg: rgba(21, 53, 127, 0.8);
+$header-bg-color: #031862;
 $text-primary: #222222;
 $text-danger: #ff2418;
 $text-fade: #d7d7d7;
@@ -15,6 +15,7 @@ $star-bg: #f6fa70;
 $heart-bg: #ff0060;
 
 // ! Font-size
+$fs-10: 10px;
 $fs-12: 12px;
 $fs-13: 13px;
 $fs-14: 14px;
@@ -32,3 +33,6 @@ $fw-bold: 700;
 
 // ! Box-shadow
 $bs-primary: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+// ! Padding
+$section-padding: 40px 0;
