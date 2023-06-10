@@ -260,7 +260,7 @@ a {
 }
 #home_carousel .carousel-inner .carousel-item .carousel_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 #home_carousel .carousel-inner .carousel-item .carousel_content .carousel_title {
