@@ -24,7 +24,7 @@ a {
   color: #fff;
 }
 
-.flex-center, #home_header .sidenav, #home_header .header_bottom .header_search, #home_header .header_bottom .header_navbar ul, #home_header .header_bottom, #home_header .header_top .top_left, #home_header .header_top {
+.flex-center, #home_deals .deals_news .carousel-inner .carousel-item .item_content, #home_header .sidenav, #home_header .header_bottom .header_search, #home_header .header_bottom .header_navbar ul, #home_header .header_bottom, #home_header .header_top .top_left, #home_header .header_top {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -186,6 +186,7 @@ a {
   top: 0;
   left: 0;
   cursor: pointer;
+  z-index: 90;
 }
 #home_header .sidenav {
   position: fixed;
@@ -194,7 +195,7 @@ a {
   background-color: white;
   height: 100vh;
   padding: 80px 0 10px;
-  z-index: 10;
+  z-index: 100;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -256,7 +257,7 @@ a {
   background-image: url("../img/banner.png");
   background-size: cover;
   padding: 300px 0 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 #home_carousel .carousel-inner .carousel-item .carousel_content {
   display: flex;
@@ -311,6 +312,147 @@ a {
   width: 90%;
 }
 
+#home_deals .deals_news {
+  background-color: black;
+  padding: 50px 0 200px;
+}
+#home_deals .deals_news .carousel-inner .carousel-item .item_content {
+  justify-content: center;
+  padding: 0 20px;
+}
+#home_deals .deals_news .carousel-inner .carousel-item .item_content span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff2418;
+}
+#home_deals .deals_news .carousel-inner .carousel-item .item_content p {
+  margin: 0 50px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+#home_deals .deals_news .carousel-inner .carousel-item .item_content button {
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 5px 20px;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+#home_deals .deals_news .carousel-inner .carousel-item .item_content button:hover {
+  color: black;
+  background-color: #2ed573;
+  border-color: #2ed573;
+}
+#home_deals .deals_news button i {
+  font-size: 18px;
+  transition: all 0.5s;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+#home_deals .deals_news button i:hover {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
+#home_deals .deals_items {
+  position: relative;
+  top: -150px;
+}
+#home_deals .deals_items .items .item_container {
+  position: relative;
+  height: 100%;
+}
+#home_deals .deals_items .items .item_container .color_background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  background-color: #c1f5ee;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#home_deals .deals_items .items .item_container .white_background {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: white;
+  width: 92%;
+  height: 92%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+#home_deals .deals_items .items .item_container .white_background .white_text {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  writing-mode: tb-rl;
+  transform: rotate(180deg) translateY(-75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+#home_deals .deals_items .items .item_container .white_background .white_text h4 {
+  margin: 20px 0 0 0;
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #d7d7d7;
+}
+#home_deals .deals_items .items .item_container .white_background .white_text i {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  transform: rotate(-180deg);
+  transition: all 1s;
+  font-size: 14px;
+  cursor: pointer;
+}
+#home_deals .deals_items .items .item_container .white_background .white_text i:hover {
+  color: black;
+  background-color: #2ed573;
+}
+#home_deals .deals_items .items .item_container img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: 4vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#home_deals .deals_items .items .item_container:hover .white_background .white_text {
+  transform: rotate(180deg) translateY(0);
+}
+#home_deals .deals_items .items .item_container:hover .white_background .white_text i {
+  transform: rotate(0);
+}
+#home_deals .deals_items .items:nth-child(2) .item_container .color_background {
+  background-color: #c8eaf6;
+}
+#home_deals .deals_items .items:nth-child(3) .item_container .color_background {
+  background-color: #f8b7bf;
+}
+
+@media screen and (max-width: 1199.98px) {
+  #home_deals .deals_items .items:nth-child(3) {
+    margin-top: 10vw;
+  }
+}
 @media screen and (max-width: 991.98px) {
   #home_carousel {
     height: auto;
@@ -327,6 +469,21 @@ a {
   #home_carousel .carousel-inner .carousel-item .carousel_content .carousel_img {
     width: 100%;
     margin-top: 50px;
+  }
+  #home_deals .deals_news .carousel-inner .carousel-item .item_content {
+    flex-direction: column;
+  }
+  #home_deals .deals_news .carousel-inner .carousel-item .item_content p {
+    margin: 10px 50px 20px;
+  }
+  #home_deals .deals_items .items .item_container .white_background .white_text h4 {
+    font-size: 3.8vw;
+  }
+  #home_deals .deals_items .items:nth-child(2) {
+    margin-top: 10vw;
+  }
+  #home_deals .deals_items .items:nth-child(3) {
+    margin-top: 10vw;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -364,5 +521,19 @@ a {
   #home_carousel {
     height: auto;
     padding: 300px 0 20px;
+  }
+  #home_deals .deals_items .items .item_container .white_background .white_text {
+    transform: rotate(180deg) translateY(-50px);
+  }
+  #home_deals .deals_items .items .item_container .white_background .white_text h4 {
+    font-size: 3vw;
+  }
+  #home_deals .deals_items .items .item_container .white_background .white_text i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: black;
   }
 }/*# sourceMappingURL=style.css.map */

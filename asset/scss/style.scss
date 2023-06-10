@@ -8,7 +8,6 @@
 @import "./pages/register";
 
 // ! home - header / navbar
-// todo: header
 #home_header {
   padding: $section-padding;
   position: absolute;
@@ -142,6 +141,7 @@
     top: 0;
     left: 0;
     cursor: pointer;
+    z-index: 90;
   }
   .sidenav {
     position: fixed;
@@ -150,7 +150,7 @@
     background-color: white;
     height: 100vh;
     padding: 80px 0 10px;
-    z-index: 10;
+    z-index: 100;
     @extend .flex-center;
     flex-direction: column;
     justify-content: space-between;
@@ -211,12 +211,12 @@
   }
 }
 
-// todo: carousel
+// ! home - carousel
 #home_carousel {
   background-image: url("../img/banner.png");
   background-size: cover;
   padding: 300px 0 50px;
-  height: 100vh;
+  min-height: 100vh;
   .carousel-inner {
     .carousel-item {
       .carousel_content {
@@ -265,13 +265,161 @@
   }
 }
 
+// ! home - deals
+#home_deals {
+  .deals_news {
+    background-color: black;
+    padding: 50px 0 200px;
+    .carousel-inner {
+      .carousel-item {
+        .item_content {
+          @extend .flex-center;
+          justify-content: center;
+          padding: 0 20px;
+          span {
+            @include testStyle($fs-18, $fw-bold, $text-danger);
+          }
+          p {
+            margin: 0 50px;
+            @include testStyle($fs-14, $fw-light, white);
+          }
+          button {
+            @include buttonStyle(
+              white,
+              30px,
+              1px solid white,
+              5px 20px,
+              black,
+              $primary-hover,
+              $primary-hover
+            );
+            font-size: $fs-14;
+          }
+        }
+      }
+    }
+    button {
+      i {
+        font-size: $fs-18;
+        transition: all 0.5s;
+        @include iconStyle(50px, 50px, transparent);
+        &:hover {
+          @include iconStyle(50px, 50px, white);
+          color: black;
+        }
+      }
+    }
+  }
+  .deals_items {
+    position: relative;
+    top: -150px;
+    .items {
+      .item_container {
+        position: relative;
+        height: 100%;
+        .color_background {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 90%;
+          height: 90%;
+          background-color: #c1f5ee;
+          border-radius: 10px;
+          box-shadow: $bs-small;
+        }
+        .white_background {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          background-color: white;
+          width: 92%;
+          height: 92%;
+          border-radius: 10px;
+          box-shadow: $bs-medium;
+          overflow: hidden;
+          .white_text {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            writing-mode: tb-rl;
+            transform: rotate(180deg) translateY(-75px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s;
+            h4 {
+              margin: 20px 0 0 0;
+              @include testStyle(1.8vw, $fw-medium, $text-fade);
+            }
+            i {
+              @include iconStyle(50px, 50px, black);
+              color: white;
+              transform: rotate(-180deg);
+              transition: all 1s;
+              font-size: $fs-14;
+              cursor: pointer;
+              &:hover {
+                color: black;
+                background-color: $primary-hover;
+              }
+            }
+          }
+        }
+        img {
+          width: 60%;
+          object-fit: cover;
+          position: relative;
+          top: 4vw;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:hover {
+          .white_background {
+            .white_text {
+              transform: rotate(180deg) translateY(0);
+              i {
+                transform: rotate(0);
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        .item_container {
+          .color_background {
+            background-color: #c8eaf6;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .item_container {
+          .color_background {
+            background-color: #f8b7bf;
+          }
+        }
+      }
+    }
+  }
+}
+
 // ! responsive
+@media screen and (max-width: 1199.98px) {
+  // todo: home_deals
+  #home_deals {
+    .deals_items {
+      .items:nth-child(3) {
+        margin-top: 10vw;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 991.98px) {
   // todo: home_carousel
   #home_carousel {
     height: auto;
     padding: 250px 0 20px;
-    .carousel-inner{
+    .carousel-inner {
       .carousel-item {
         .carousel_content {
           flex-direction: column;
@@ -285,6 +433,41 @@
             margin-top: 50px;
           }
         }
+      }
+    }
+  }
+
+  // todo: home_deals
+  #home_deals {
+    .deals_news {
+      .carousel-inner {
+        .carousel-item {
+          .item_content {
+            flex-direction: column;
+            p {
+              margin: 10px 50px 20px;
+            }
+          }
+        }
+      }
+    }
+    .deals_items {
+      .items {
+        .item_container {
+          .white_background {
+            .white_text {
+              h4 {
+                font-size: 3.8vw;
+              }
+            }
+          }
+        }
+      }
+      .items:nth-child(2) {
+        margin-top: 10vw;
+      }
+      .items:nth-child(3) {
+        margin-top: 10vw;
       }
     }
   }
@@ -338,5 +521,26 @@
   #home_carousel {
     height: auto;
     padding: 300px 0 20px;
+  }
+
+  // todo: home_deals
+  #home_deals {
+    .deals_items {
+      .items {
+        .item_container {
+          .white_background {
+            .white_text {
+              transform: rotate(180deg) translateY(-50px);
+              h4 {
+                font-size: 3vw;
+              }
+              i {
+                @include iconStyle(30px, 30px, black);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
