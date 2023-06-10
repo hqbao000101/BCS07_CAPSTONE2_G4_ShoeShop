@@ -5,12 +5,22 @@
   color: $color;
 }
 
-@mixin buttonStyle($bg-color, $radius, $border, $padding, $bg-hover, $border-hover) {
+@mixin buttonStyle(
+  $bg-color,
+  $radius,
+  $border,
+  $padding,
+  $color-hover,
+  $bg-hover,
+  $border-hover
+) {
   background-color: $bg-color;
   border-radius: $radius;
   border: $border;
   padding: $padding;
+  transition: all 0.5s;
   &:hover {
+    color: $color-hover;
     background-color: $bg-hover;
     border-color: $border-hover;
   }

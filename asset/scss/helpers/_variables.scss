@@ -19,6 +19,7 @@ $fs-10: 10px;
 $fs-12: 12px;
 $fs-13: 13px;
 $fs-14: 14px;
+$fs-18: 18px;
 $fs-24: 24px;
 $fs-30: 30px;
 $fs-48: 48px;
@@ -32,7 +33,9 @@ $fw-semibold: 600;
 $fw-bold: 700;
 
 // ! Box-shadow
-$bs-primary: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$bs-small: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$bs-medium: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$bs-large: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 // ! Padding
 $section-padding: 40px 0;

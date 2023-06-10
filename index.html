@@ -35,8 +35,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+
+    <!-- ! Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- ! CSS -->
@@ -44,6 +53,7 @@
   </head>
 
   <body>
+    <!-- ! home - header / navbar -->
     <header id="home_header">
       <div class="container">
         <div class="header_top">
@@ -107,7 +117,78 @@
       </div>
     </header>
     <main>
-      <section id="home_carousel"></section>
+      <!-- ! home - carousel -->
+      <section id="home_carousel">
+        <div class="container">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- todo: item 1 -->
+              <div class="carousel-item active">
+                <div class="carousel_content">
+                  <div class="carousel_title">
+                    <h2>NEW ARRIVALS</h2>
+                    <h1>MATE SHOES</h1>
+                    <p>
+                      This Mate Shoes remakes a classic with new colors and
+                      textures, giving you a fresh look with a familiar feel.
+                      Premium materials and accents give modern expression to an
+                      all-time favorite.
+                    </p>
+                    <button>SHOP NOW</button>
+                  </div>
+                  <div class="carousel_img">
+                    <img src="./asset/img/banner_01.png" alt="Banner Shoe 1" />
+                  </div>
+                </div>
+              </div>
+              <!-- todo: item 2 -->
+              <div class="carousel-item">
+                <div class="carousel_content">
+                  <div class="carousel_title">
+                    <h2>RUNNING SHOES</h2>
+                    <h1>HYPERFLEX</h1>
+                    <p>
+                      Running shoes are a type of athletic footwear designed
+                      specifically for running. They typically have a cushioned
+                      sole and flexible upper to provide support and comfort for
+                      the foot.
+                    </p>
+                    <button>SHOP NOW</button>
+                  </div>
+                  <div class="carousel_img">
+                    <img
+                      src="./asset/img/banner_02.png"
+                      alt="Banner Shoe 2"
+                      id="banner-big"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- todo: item 3 -->
+              <div class="carousel-item">
+                <div class="carousel_content">
+                  <div class="carousel_title">
+                    <h2>ORIGINAL SHOES</h2>
+                    <h1>SNEAKERS</h1>
+                    <p>
+                      Sneakers are a type of footwear that is typically characterized by a flexible sole and a canvas or leather
+                      upper. They are often used for sports and other physical activities.
+                    </p>
+                    <button>SHOP NOW</button>
+                  </div>
+                  <div class="carousel_img">
+                    <img src="./asset/img/banner_03.png" alt="Banner Shoe 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <!-- ! Bootstrap JavaScript Libraries -->

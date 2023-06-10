@@ -7,7 +7,7 @@
 @import "./pages/detail";
 @import "./pages/register";
 
-// ! home
+// ! home - header / navbar
 // todo: header
 #home_header {
   padding: $section-padding;
@@ -213,12 +213,83 @@
 
 // todo: carousel
 #home_carousel {
-  height: 100vh;
   background-image: url("../img/banner.png");
   background-size: cover;
+  padding: 300px 0 50px;
+  height: 100vh;
+  .carousel-inner {
+    .carousel-item {
+      .carousel_content {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        .carousel_title {
+          width: 35%;
+          h2 {
+            @include testStyle($fs-30, $fw-bold, white);
+          }
+          h1 {
+            @include testStyle($fs-72, $fw-bold, white);
+          }
+          p {
+            @include testStyle($fs-18, $fw-light, white);
+            line-height: 2;
+            margin: 20px 0 40px;
+          }
+          button {
+            @include buttonStyle(
+              $primary-color,
+              40px,
+              1px solid $primary-color,
+              15px 40px,
+              white,
+              black,
+              black
+            );
+            @include testStyle($fs-18, $fw-semibold, black);
+            box-shadow: $bs-medium;
+          }
+        }
+        .carousel_img {
+          width: 50%;
+          img {
+            width: 100%;
+            object-fit: cover;
+            &#banner-big {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // ! responsive
+@media screen and (max-width: 991.98px) {
+  // todo: home_carousel
+  #home_carousel {
+    height: auto;
+    padding: 250px 0 20px;
+    .carousel-inner{
+      .carousel-item {
+        .carousel_content {
+          flex-direction: column;
+          align-items: center;
+          .carousel_title {
+            width: 100%;
+            text-align: center;
+          }
+          .carousel_img {
+            width: 100%;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   // todo: home_header
   #home_header {
@@ -261,5 +332,11 @@
         }
       }
     }
+  }
+
+  // todo: home_carousel
+  #home_carousel {
+    height: auto;
+    padding: 300px 0 20px;
   }
 }
