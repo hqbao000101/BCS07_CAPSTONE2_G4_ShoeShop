@@ -411,13 +411,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin: 80px 0;
   .sales_title {
-    width: 20%;
+    width: 15%;
     writing-mode: tb-rl;
     transform: rotate(180deg);
-    padding-right: 14%;
-    padding-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 0 10px;
     h4 {
       @include testStyle($fs-24, $fw-bold, $text-fade);
     }
@@ -426,7 +428,7 @@
     }
   }
   .sales_content {
-    width: 80%;
+    width: 85%;
     h4 {
       @include testStyle($fs-30, $fw-bold, $text-primary);
       margin-bottom: 40px;
@@ -525,6 +527,32 @@
           }
         }
         .sales_info {
+          margin-top: 30px;
+          h4 {
+            @include testStyle($fs-14, $fw-bold, $text-primary);
+            transition: all 0.5s;
+            margin: 0;
+            &:hover {
+              color: $primary-hover;
+            }
+          }
+          .info_stars {
+            font-size: $fs-13;
+            margin: 10px 0;
+          }
+          .info_prices {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h5 {
+              @include testStyle($fs-14, $fw-bold, $text-primary);
+              &:nth-child(2) {
+                margin-left: 20px;
+                text-decoration: line-through $text-primary;
+                color: $text-fade-hover;
+              }
+            }
+          }
         }
       }
     }

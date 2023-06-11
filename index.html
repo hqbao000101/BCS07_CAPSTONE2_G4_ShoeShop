@@ -389,7 +389,9 @@
               </div>
               <!-- todo: sale-info -->
               <div class="sales_info">
-                <h4>Men's Air Jordan 14 Retro</h4>
+                <a href="#">
+                  <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                </a>
                 <div class="info_stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -422,7 +424,9 @@
               </div>
               <!-- todo: sale-info -->
               <div class="sales_info">
-                <h4>Men's Air Jordan 14 Retro</h4>
+                <a href="#">
+                  <h4>Air Jordan 1 Mid</h4>
+                </a>
                 <div class="info_stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -431,8 +435,8 @@
                   <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
                 <div class="info_prices">
-                  <h5>$140.00</h5>
-                  <h5>$155.00</h5>
+                  <h5>$167.00</h5>
+                  <h5>$185.00</h5>
                 </div>
               </div>
             </div>
@@ -455,7 +459,9 @@
               </div>
               <!-- todo: sale-info -->
               <div class="sales_info">
-                <h4>Men's Air Jordan 14 Retro</h4>
+                <a href="#">
+                  <h4>Nike Air Max</h4>
+                </a>
                 <div class="info_stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -464,8 +470,8 @@
                   <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
                 <div class="info_prices">
-                  <h5>$140.00</h5>
-                  <h5>$155.00</h5>
+                  <h5>$159.25</h5>
+                  <h5>$175.00</h5>
                 </div>
               </div>
             </div>
@@ -507,7 +513,25 @@
     <script src="./asset/library/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+            },
+          },
+        });
       });
     </script>
 
