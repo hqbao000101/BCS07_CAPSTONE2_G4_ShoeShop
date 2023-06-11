@@ -48,6 +48,10 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- ! Owl Carousel -->
+    <link rel="stylesheet" href="./asset/library/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./asset/library/owl.theme.default.min.css" />
+
     <!-- ! CSS -->
     <link rel="stylesheet" href="./asset/css/style.css" />
   </head>
@@ -243,68 +247,71 @@
       <section id="home_deals">
         <!-- todo: news -->
         <div class="deals_news">
-          <div id="carousel_deals" class="carousel slide carousel-fade">
-            <!-- todo: carousel - content -->
-            <div class="carousel-inner text-center">
-              <div class="carousel-item active">
-                <div
-                  class="item_content animate__animated animate__fadeInDown animate__delay-1s"
-                >
-                  <span>BLACK FRIDAY DEALS 2023</span>
-                  <p>
-                    The biggest sales event of the year is coming up and you
-                    don't want to miss it
-                  </p>
-                  <button>View More</button>
-                </div>
-              </div>
-              <div
-                class="carousel-item animate__animated animate__fadeInDown animate__delay-1s"
-              >
-                <div class="item_content">
-                  <span>FREE DELIVERY</span>
-                  <p>
-                    To First-Time customers only, US Customers or Order over
-                    $200
-                  </p>
-                  <button>View More</button>
-                </div>
-              </div>
-              <div
-                class="carousel-item animate__animated animate__fadeInDown animate__delay-1s"
-              >
-                <div class="item_content">
-                  <span>YEAR END FLASH SALE</span>
-                  <div id="count-down">
-                    <p>09 : 19 : 37</p>
+          <div class="container">
+            <div id="carousel_deals" class="carousel slide carousel-fade">
+              <!-- todo: carousel - content -->
+              <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                  <div
+                    class="item_content animate__animated animate__fadeInDown animate__delay-1s"
+                  >
+                    <span>BLACK FRIDAY DEALS 2023</span>
+                    <p>
+                      The biggest sales event of the year is coming up and you
+                      don't want to miss it
+                    </p>
+                    <button>View More</button>
                   </div>
-                  <button>View More</button>
+                </div>
+                <div
+                  class="carousel-item animate__animated animate__fadeInDown animate__delay-1s"
+                >
+                  <div class="item_content">
+                    <span>FREE DELIVERY</span>
+                    <p>
+                      To First-Time customers only, US Customers or Order over
+                      $200
+                    </p>
+                    <button>View More</button>
+                  </div>
+                </div>
+                <div
+                  class="carousel-item animate__animated animate__fadeInDown animate__delay-1s"
+                >
+                  <div class="item_content">
+                    <span>YEAR END FLASH SALE</span>
+                    <div id="count-down">
+                      <p>09 : 19 : 37</p>
+                    </div>
+                    <button>View More</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- todo: button - prev -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carousel_deals"
-              data-bs-slide="prev"
-            >
-              <i class="fa-solid fa-arrow-left-long"></i>
-              <span class="visually-hidden">Previous</span>
-            </button>
+              <!-- todo: button - prev -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel_deals"
+                data-bs-slide="prev"
+              >
+                <i class="fa-solid fa-arrow-left-long"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
 
-            <!-- todo: button - next -->
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carousel_deals"
-              data-bs-slide="next"
-            >
-              <i class="fa-solid fa-arrow-right-long"></i>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <!-- todo: button - next -->
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel_deals"
+                data-bs-slide="next"
+              >
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
+
         <!-- todo: items -->
         <div class="deals_items">
           <div class="container-fluid">
@@ -352,8 +359,129 @@
           </div>
         </div>
       </section>
+      <!-- ! home - flash sales -->
+      <section class="home_sales">
+        <!-- todo: title -->
+        <div class="sales_title">
+          <h4>DAILY DEALS</h4>
+          <h3>FLASH SALE</h3>
+        </div>
+        <!-- todo: items -->
+        <div class="sales_content">
+          <h4>FLASH SALE</h4>
+          <div id="flash_shoes" class="owl-carousel">
+            <!-- todo: item 1 -->
+            <div class="sales_container">
+              <!-- todo: sale-img -->
+              <div class="sales_img">
+                <img src="./asset/img/flash_01.png" alt="Sales Pic 1" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-9%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <!-- todo: sale-info -->
+              <div class="sales_info">
+                <h4>Men's Air Jordan 14 Retro</h4>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$140.00</h5>
+                  <h5>$155.00</h5>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 2 -->
+            <div class="sales_container">
+              <!-- todo: sale-img -->
+              <div class="sales_img">
+                <img src="./asset/img/flash_02.png" alt="Sales Pic 2" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-9%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <!-- todo: sale-info -->
+              <div class="sales_info">
+                <h4>Men's Air Jordan 14 Retro</h4>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$140.00</h5>
+                  <h5>$155.00</h5>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 3 -->
+            <div class="sales_container">
+              <!-- todo: sale-img -->
+              <div class="sales_img">
+                <img src="./asset/img/flash_03.png" alt="Sales Pic 3" />
+                <div class="img_percent">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>-9%</span>
+                </div>
+                <div class="img_interact">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-images"></i>
+                </div>
+                <div class="img_add">
+                  <h5>QUICK ADD</h5>
+                </div>
+              </div>
+              <!-- todo: sale-info -->
+              <div class="sales_info">
+                <h4>Men's Air Jordan 14 Retro</h4>
+                <div class="info_stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="info_prices">
+                  <h5>$140.00</h5>
+                  <h5>$155.00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <!-- ! Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- ! Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -374,6 +502,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- ! Owl Carousel -->
+    <script src="./asset/library/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
 
     <!-- ! JS -->
     <script src="./models/Shoe.js"></script>
