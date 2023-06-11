@@ -500,8 +500,8 @@ a {
 .home_sales .sales_content #flash_shoes .sales_container .sales_img img {
   width: 100%;
   aspect-ratio: 1/1.1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: all 0.5s;
 }
 .home_sales .sales_content #flash_shoes .sales_container .sales_img .img_percent {
@@ -544,6 +544,9 @@ a {
   transition: all 0.5s;
   display: block;
   transform: translateX(65px);
+}
+.home_sales .sales_content #flash_shoes .sales_container .sales_img .img_interact i:nth-child(1):hover {
+  background-color: #ff0060;
 }
 .home_sales .sales_content #flash_shoes .sales_container .sales_img .img_interact i:nth-child(2) {
   transition: transform 0.7s;
@@ -619,6 +622,143 @@ a {
   color: #9b9b9b;
 }
 
+#home_trending h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 51px;
+  padding-top: 48px;
+}
+#home_trending .trending_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home_trending .trending_grid .grid_item {
+  position: relative;
+  overflow: hidden;
+}
+#home_trending .trending_grid .grid_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#home_trending .trending_grid .grid_item .shoe_overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#home_trending .trending_grid .grid_item .shoe_overlay button {
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 1vw 2vw;
+  transition: all 0.5s;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+#home_trending .trending_grid .grid_item .shoe_overlay button:hover {
+  color: black;
+  background-color: #2ed573;
+  border-color: transparent;
+}
+#home_trending .trending_grid .grid_item:nth-child(1) {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+#home_trending .trending_grid .grid_item:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#home_trending .trending_grid .grid_item:nth-child(5) {
+  grid-row: 3/span 2;
+}
+#home_trending .trending_grid .grid_item:nth-child(6) {
+  grid-column: 1/span 2;
+  grid-row: 5/span 1;
+}
+#home_trending .trending_grid .grid_item:nth-child(9) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#home_trending .trending_grid .grid_item:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: skewX(-20deg);
+  transition: all 0.5s;
+}
+#home_trending .trending_grid .grid_item:hover:after {
+  left: 150%;
+}
+#home_trending .trending_grid .grid_item-shoe {
+  position: relative;
+  border: 1px solid #e7e8eb;
+}
+#home_trending .trending_grid .grid_item-shoe img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.5s;
+}
+#home_trending .trending_grid .grid_item-shoe .shoe_overlay {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  bottom: 2vw;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#home_trending .trending_grid .grid_item-shoe .shoe_overlay h5 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222222;
+}
+#home_trending .trending_grid .grid_item-shoe .shoe_overlay .shoe_price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#home_trending .trending_grid .grid_item-shoe .shoe_overlay .shoe_price h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+}
+#home_trending .trending_grid .grid_item-shoe .shoe_overlay .shoe_price i {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#home_trending .trending_grid .grid_item-shoe .shoe_overlay .shoe_price i:hover {
+  background-color: #2ed573;
+  color: black;
+}
+#home_trending .trending_grid .grid_item-shoe:nth-child(4) {
+  grid-row: 4/span 1;
+}
+#home_trending .trending_grid .grid_item-shoe:hover img {
+  filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
+}
+
 @media screen and (max-width: 1199.98px) {
   #home_deals .deals_items .items:nth-child(3) {
     margin-top: 10vw;
@@ -674,6 +814,13 @@ a {
   #home_header .header_bottom .header_search input {
     flex-grow: 1;
     margin: 0 5%;
+  }
+  #home_trending .trending_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #home_trending .trending_grid .grid_item-shoe:nth-child(3) {
+    grid-row: 3/span 1;
   }
 }
 @media screen and (max-width: 575.98px) {
