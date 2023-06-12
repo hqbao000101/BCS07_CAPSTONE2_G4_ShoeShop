@@ -77,8 +77,8 @@
               <li><a href="#" class="active">HOME</a></li>
               <li><a href="#home_deals">DEALS</a></li>
               <li><a href="#home_trending">TRENDING</a></li>
-              <li><a href="#">CATEGORY</a></li>
-              <li><a href="#">ABOUT</a></li>
+              <li><a href="#home_product">PRODUCT</a></li>
+              <li><a href="#home_about">ABOUT</a></li>
               <li><a href="#">SERVICES</a></li>
             </ul>
           </nav>
@@ -101,8 +101,8 @@
                 <li><a href="#" class="active">HOME</a></li>
                 <li><a href="#home_deals">DEALS</a></li>
                 <li><a href="#home_trending">TRENDING</a></li>
-                <li><a href="#">CATEGORY</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#home_product">PRODUCT</a></li>
+                <li><a href="#home_about">ABOUT</a></li>
                 <li><a href="#">SERVICES</a></li>
               </ul>
             </nav>
@@ -519,15 +519,15 @@
         <div class="trending_grid">
           <!-- todo: item 1 -->
           <div class="grid_item">
-            <img src="./asset/img/trending_01.jpg" alt="Trending Pic 1">
+            <img src="./asset/img/trending_01.jpg" alt="Trending Pic 1" />
           </div>
           <!-- todo: item 2 -->
           <div class="grid_item">
-            <img src="./asset/img/trending_02.jpg" alt="Trending Pic 2">
+            <img src="./asset/img/trending_02.jpg" alt="Trending Pic 2" />
           </div>
           <!-- todo: item 3 -->
           <div class="grid_item-shoe">
-            <img src="./asset/img/trending_03.png" alt="Trending Pic 3">
+            <img src="./asset/img/trending_03.png" alt="Trending Pic 3" />
             <div class="shoe_overlay">
               <h5>AIR GRIFFEY 1 MAX</h5>
               <div class="shoe_price">
@@ -538,7 +538,7 @@
           </div>
           <!-- todo: item 4 -->
           <div class="grid_item-shoe">
-            <img src="./asset/img/trending_04.png" alt="Trending Pic 4">
+            <img src="./asset/img/trending_04.png" alt="Trending Pic 4" />
             <div class="shoe_overlay">
               <h5>WOMEN WINTER BOOT</h5>
               <div class="shoe_price">
@@ -549,21 +549,21 @@
           </div>
           <!-- todo: item 5 -->
           <div class="grid_item">
-            <img src="./asset/img/trending_05.jpg" alt="Trending Pic 5">
+            <img src="./asset/img/trending_05.jpg" alt="Trending Pic 5" />
             <div class="shoe_overlay">
               <button>BUY NOW</button>
             </div>
           </div>
           <!-- todo: item 6 -->
           <div class="grid_item">
-            <img src="./asset/img/trending_06.jpg" alt="Trending Pic 6">
+            <img src="./asset/img/trending_06.jpg" alt="Trending Pic 6" />
             <div class="shoe_overlay">
               <button>BUY NOW</button>
             </div>
           </div>
           <!-- todo: item 7 -->
           <div class="grid_item-shoe">
-            <img src="./asset/img/trending_07.png" alt="Trending Pic 7">
+            <img src="./asset/img/trending_07.png" alt="Trending Pic 7" />
             <div class="shoe_overlay">
               <h5>CONVERSE GRAFFITI</h5>
               <div class="shoe_price">
@@ -574,7 +574,7 @@
           </div>
           <!-- todo: item 8 -->
           <div class="grid_item-shoe">
-            <img src="./asset/img/trending_08.png" alt="Trending Pic 8">
+            <img src="./asset/img/trending_08.png" alt="Trending Pic 8" />
             <div class="shoe_overlay">
               <h5>ADIDAS RUNNING SHOES</h5>
               <div class="shoe_price">
@@ -585,13 +585,598 @@
           </div>
           <!-- todo: item 9 -->
           <div class="grid_item">
-            <img src="./asset/img/trending_09.jpg" alt="Trending Pic 9">
+            <img src="./asset/img/trending_09.jpg" alt="Trending Pic 9" />
             <div class="shoe_overlay">
               <button>BUY NOW</button>
             </div>
           </div>
         </div>
       </section>
+      <!-- ! home - product -->
+      <section id="home_product">
+        <div class="container-fluid">
+          <h2 class="text-center">OUR PRODUCT</h2>
+          <!-- todo:  Nav and Tabs -->
+          <div class="product_content">
+            <!-- nav tab -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="all-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#all"
+                  type="button"
+                  role="tab"
+                  aria-controls="all"
+                  aria-selected="true"
+                >
+                  ALL
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="men-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#men"
+                  type="button"
+                  role="tab"
+                  aria-controls="men"
+                  aria-selected="false"
+                >
+                  MEN
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="women-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#women"
+                  type="button"
+                  role="tab"
+                  aria-controls="women"
+                  aria-selected="false"
+                >
+                  WOMEN
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="adidas-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#adidas"
+                  type="button"
+                  role="tab"
+                  aria-controls="adidas"
+                  aria-selected="false"
+                >
+                  ADIDAS
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="nike-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nike"
+                  type="button"
+                  role="tab"
+                  aria-controls="nike"
+                  aria-selected="false"
+                >
+                  NIKE
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="converse-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#converse"
+                  type="button"
+                  role="tab"
+                  aria-controls="converse"
+                  aria-selected="false"
+                >
+                  CONVERSE
+                </button>
+              </li>
+            </ul>
+            <!-- tab content -->
+            <div class="tab-content" id="myTabContent">
+              <!-- todo: tab 1 - all products -->
+              <div
+                class="tab-pane fade show active"
+                id="all"
+                role="tabpanel"
+                aria-labelledby="all-tab"
+              >
+                <div class="row gy-5">
+                  <!-- ! item - shoe - example -->
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_percent">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                            <span>-5%</span>
+                          </div>
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                            <h5>$155.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_percent">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                            <span>-5%</span>
+                          </div>
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                            <h5>$155.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_percent">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                            <span>-5%</span>
+                          </div>
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                            <h5>$155.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ! ------------------- -->
+                </div>
+              </div>
+              <!-- todo: tab 2 - men -->
+              <div
+                class="tab-pane fade"
+                id="men"
+                role="tabpanel"
+                aria-labelledby="men-tab"
+              >
+                <div class="row gy-5">
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- todo: tab 3 - women -->
+              <div
+                class="tab-pane fade"
+                id="women"
+                role="tabpanel"
+                aria-labelledby="women-tab"
+              >
+                <div class="row gy-5">
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- todo: tab 4 - adidas -->
+              <div
+                class="tab-pane fade"
+                id="adidas"
+                role="tabpanel"
+                aria-labelledby="adidas-tab"
+              >
+                <div class="row gy-5">
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- todo: tab 5 - nike -->
+              <div
+                class="tab-pane fade"
+                id="nike"
+                role="tabpanel"
+                aria-labelledby="nike-tab"
+              >
+                <div class="row gy-5">
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- todo: tab 6 - converse -->
+              <div
+                class="tab-pane fade"
+                id="converse"
+                role="tabpanel"
+                aria-labelledby="converse-tab"
+              >
+                <div class="row gy-5">
+                  <!-- todo: item 1 -->
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product_item animate__animated animate__zoomIn">
+                      <div class="sales_container">
+                        <!-- todo: sale-img -->
+                        <div class="sales_img">
+                          <img
+                            src="./asset/img/flash_01.png"
+                            alt="Sales Pic 1"
+                          />
+                          <div class="img_interact">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-images"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
+                        </div>
+                        <!-- todo: sale-info -->
+                        <div class="sales_info">
+                          <a href="#">
+                            <h4>Air Force 1 Nike Air Zoom Pegasus 34</h4>
+                          </a>
+                          <div class="info_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>
+                          <div class="info_prices">
+                            <h5>$140.00</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ! home - about -->
+      <section id="home_about"></section>
     </main>
     <footer></footer>
     <!-- ! Jquery -->
@@ -634,15 +1219,12 @@
           responsive: {
             0: {
               items: 1,
-              nav: true,
             },
             600: {
               items: 2,
-              nav: false,
             },
             1000: {
               items: 3,
-              nav: true,
             },
           },
         });
