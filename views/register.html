@@ -35,18 +35,118 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- ! CSS -->
-    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
   </head>
 
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- ! register page -->
+    <section id="register">
+      <div class="container">
+        <div class="register_form">
+          <div class="form_title">
+            <h1>REGISTER</h1>
+            <h2>Visit our website with the best experience</h2>
+            <p>
+              Let's get you all set up so you can verify your personal account
+              and begin shopping TODAY
+            </p>
+          </div>
+
+          <!-- todo: form body -->
+          <div class="row mb-3 form_body">
+            <!-- todo: first name -->
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="firstName"
+                id="firstName"
+              />
+            </div>
+            <!-- todo: last name -->
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="lastName"
+                id="lastName"
+              />
+            </div>
+            <!-- todo: phone number -->
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" name="phone" id="phone" />
+            </div>
+            <!-- todo: email address -->
+            <div class="col-md-6">
+              <label for="" class="form-label">Email Address</label>
+              <input type="text" class="form-control" name="email" id="email" />
+            </div>
+            <!-- todo: password -->
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+              />
+            </div>
+            <!-- todo: confirm password -->
+            <div class="col-md-6">
+              <label for="" class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+          </div>
+
+          <div class="form_check">
+            <!-- todo: checkboxes -->
+            <div class="receive_check mb-4 mb-sm-0">
+              <input type="checkbox" id="receiveEmails" name="receiveEmails" class="mb-3 mb-sm-0"/>
+              <label for="receiveEmails"
+                >Yes, I want to receive new shoes' notifications</label
+              >
+            </div>
+            <div class="agree_check">
+              <input type="checkbox" id="agreement" name="agreement" class="mb-3 mb-sm-0"/>
+              <label for="agreement"
+                >I agree to all the <span>Term</span>,
+                <span>Privacy Policy</span> and <span>Fees</span></label
+              >
+            </div>
+            <!-- todo: button -->
+            <button type="button" id="create">Create Account</button>
+          </div>
+
+          
+          <!-- todo: login -->
+          <div class="login_section">
+            <p>Already have an account?</p>
+            <span>Log in</span>
+          </div>
+          
+          <!-- todo: back-to-home -->
+          <div class="back_home">
+            <a href="../index.html">
+              <p>Back to the Home</p>
+            </a>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ! Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

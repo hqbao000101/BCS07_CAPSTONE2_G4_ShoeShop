@@ -1052,6 +1052,19 @@
     }
   }
 
+  // todo: home_product
+  #home_product {
+    .product_content {
+      ul {
+        li {
+          button {
+            font-size: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+
   // todo: home_footer
   #home_footer {
     .footer_bottom {
@@ -1144,6 +1157,19 @@
                 @include iconStyle(30px, 30px, black);
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  // todo: home_product
+  #home_product {
+    .product_content {
+      ul {
+        li {
+          button {
+            font-size: 4vw;
           }
         }
       }
