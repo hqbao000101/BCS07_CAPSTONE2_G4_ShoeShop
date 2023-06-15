@@ -43,7 +43,7 @@ function loopUpdateContent(arr, stt, result) {
           </div>
           <!-- todo: sale-info -->
           <div class="sales_info">
-            <a href="../views/detail.html">
+            <a href="../views/detail.html" onclick="shoeDetails(${item.id})">
               <h4>${item.name}</h4>
             </a>
             <div class="info_stars">

@@ -8,7 +8,7 @@
   .register_form {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
     padding: 20px;
     width: 80%;
     position: absolute;
@@ -35,10 +35,21 @@
       }
     }
     .form_body {
+      margin-bottom: 30px !important;
       label {
         @include testStyle($fs-14, $fw-medium, white);
         font-family: "Jost", sans-serif;
       }
+
+      h3 {
+        @include testStyle($fs-14, $fw-medium, white);
+        font-family: "Jost", sans-serif;
+        border-left: 2px solid $primary-color;
+        padding: 10px 0 10px 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0;
+      }
+
       input {
         margin-bottom: 20px;
         background-color: transparent;
@@ -52,6 +63,29 @@
         &:focus {
           box-shadow: none;
           border-bottom-color: #ff7675;
+        }
+      }
+      .form_gender {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        input {
+          margin: 0;
+          &:nth-child(1) {
+            margin-right: 10px;
+          }
+          &:nth-child(3) {
+            margin: 0 10px 0 30px;
+          }
+        }
+        label {
+          @include testStyle($fs-16, $fw-medium, white);
+          font-family: "Jost", sans-serif;
+          cursor: pointer;
+          transition: all 0.5s;
+          &:hover {
+            color: $primary-color;
+          }
         }
       }
     }

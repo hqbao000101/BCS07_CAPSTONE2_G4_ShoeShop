@@ -3,7 +3,7 @@
   <head>
     <link
       rel="shortcut icon"
-      href="./asset/img/favicon.png"
+      href="../asset/img/favicon.png"
       type="image/x-icon"
     />
     <title>G4 ShoeShop - Register</title>
@@ -53,7 +53,7 @@
             <h2>Visit our website with the best experience</h2>
             <p>
               Let's get you all set up so you can verify your personal account
-              and begin shopping TODAY
+              and begin shopping now
             </p>
           </div>
 
@@ -109,18 +109,40 @@
                 id="confirmPassword"
               />
             </div>
+
+            <!-- todo: radio - gender -->
+            <div class="col-md-6">
+              <h3>Gender</h3>
+            </div>
+
+            <div class="col-md-6 form_gender mt-4 mt-md-0">
+              <input type="radio" name="gender" id="male" checked/>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </div>
           </div>
 
           <div class="form_check">
             <!-- todo: checkboxes -->
             <div class="receive_check mb-4 mb-sm-0">
-              <input type="checkbox" id="receiveEmails" name="receiveEmails" class="mb-3 mb-sm-0"/>
+              <input
+                type="checkbox"
+                id="receiveEmails"
+                name="receiveEmails"
+                class="mb-3 mb-sm-0"
+              />
               <label for="receiveEmails"
                 >Yes, I want to receive new shoes' notifications</label
               >
             </div>
             <div class="agree_check">
-              <input type="checkbox" id="agreement" name="agreement" class="mb-3 mb-sm-0"/>
+              <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                class="mb-3 mb-sm-0"
+              />
               <label for="agreement"
                 >I agree to all the <span>Term</span>,
                 <span>Privacy Policy</span> and <span>Fees</span></label
@@ -130,13 +152,12 @@
             <button type="button" id="create">Create Account</button>
           </div>
 
-          
           <!-- todo: login -->
           <div class="login_section">
             <p>Already have an account?</p>
             <span>Log in</span>
           </div>
-          
+
           <!-- todo: back-to-home -->
           <div class="back_home">
             <a href="../index.html">
@@ -169,10 +190,9 @@
     ></script>
 
     <!-- ! JS -->
-    <script src="../models/Shoe.js"></script>
     <script src="../models/User.js"></script>
     <script src="../controllers/validation.js"></script>
     <script src="../controllers/helper.js"></script>
-    <script src="../controllers/main.js"></script>
+    <script src="../controllers/register.js"></script>
   </body>
 </html>

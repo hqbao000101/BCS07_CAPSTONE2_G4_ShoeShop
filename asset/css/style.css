@@ -50,7 +50,7 @@ a {
 #register .register_form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
   padding: 20px;
   width: 80%;
   position: absolute;
@@ -83,11 +83,24 @@ a {
   font-family: "Jost", sans-serif;
   margin: 0;
 }
+#register .register_form .form_body {
+  margin-bottom: 30px !important;
+}
 #register .register_form .form_body label {
   font-size: 14px;
   font-weight: 500;
   color: white;
   font-family: "Jost", sans-serif;
+}
+#register .register_form .form_body h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  font-family: "Jost", sans-serif;
+  border-left: 2px solid #00dfa2;
+  padding: 10px 0 10px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 #register .register_form .form_body input {
   margin-bottom: 20px;
@@ -105,6 +118,31 @@ a {
 #register .register_form .form_body input:focus {
   box-shadow: none;
   border-bottom-color: #ff7675;
+}
+#register .register_form .form_body .form_gender {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#register .register_form .form_body .form_gender input {
+  margin: 0;
+}
+#register .register_form .form_body .form_gender input:nth-child(1) {
+  margin-right: 10px;
+}
+#register .register_form .form_body .form_gender input:nth-child(3) {
+  margin: 0 10px 0 30px;
+}
+#register .register_form .form_body .form_gender label {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#register .register_form .form_body .form_gender label:hover {
+  color: #00dfa2;
 }
 #register .register_form .form_check {
   font-size: 14px;
