@@ -92,6 +92,12 @@ a {
   color: white;
   font-family: "Jost", sans-serif;
 }
+#register .register_form .form_body p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ff2418;
+  margin: 0;
+}
 #register .register_form .form_body h3 {
   font-size: 14px;
   font-weight: 500;

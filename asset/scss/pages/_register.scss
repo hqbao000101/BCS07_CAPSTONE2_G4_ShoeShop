@@ -41,6 +41,11 @@
         font-family: "Jost", sans-serif;
       }
 
+      p {
+        @include testStyle($fs-16, $fw-light, $text-danger);
+        margin: 0;
+      }
+
       h3 {
         @include testStyle($fs-14, $fw-medium, white);
         font-family: "Jost", sans-serif;

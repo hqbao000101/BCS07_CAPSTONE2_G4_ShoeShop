@@ -61,7 +61,8 @@
           <div class="row mb-3 form_body">
             <!-- todo: first name -->
             <div class="col-md-6">
-              <label for="firstName" class="form-label">First Name</label>
+              <label for="firstName" class="form-label">First Name <span class="text-danger">*</span> </label>
+              <p id="first-alert"></p>
               <input
                 type="text"
                 class="form-control"
@@ -71,7 +72,8 @@
             </div>
             <!-- todo: last name -->
             <div class="col-md-6">
-              <label for="lastName" class="form-label">Last Name</label>
+              <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+              <p id="last-alert"></p>
               <input
                 type="text"
                 class="form-control"
@@ -81,17 +83,20 @@
             </div>
             <!-- todo: phone number -->
             <div class="col-md-6">
-              <label for="phone" class="form-label">Phone Number</label>
+              <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+              <p id="phone-alert"></p>
               <input type="text" class="form-control" name="phone" id="phone" />
             </div>
             <!-- todo: email address -->
             <div class="col-md-6">
-              <label for="" class="form-label">Email Address</label>
+              <label for="" class="form-label">Email Address <span class="text-danger">*</span></label>
+              <p id="email-alert"></p>
               <input type="text" class="form-control" name="email" id="email" />
             </div>
             <!-- todo: password -->
             <div class="col-md-6">
-              <label for="password" class="form-label">Password</label>
+              <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+              <p id="pass-alert"></p>
               <input
                 type="password"
                 class="form-control"
@@ -101,7 +106,8 @@
             </div>
             <!-- todo: confirm password -->
             <div class="col-md-6">
-              <label for="" class="form-label">Confirm Password</label>
+              <label for="" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+              <p id="repass-alert"></p>
               <input
                 type="password"
                 class="form-control"
@@ -116,9 +122,9 @@
             </div>
 
             <div class="col-md-6 form_gender mt-4 mt-md-0">
-              <input type="radio" name="gender" id="male" checked/>
+              <input type="radio" name="gender" id="male" value="true" checked/>
               <label for="male">Male</label>
-              <input type="radio" name="gender" id="female" />
+              <input type="radio" name="gender" id="female" value="false"/>
               <label for="female">Female</label>
             </div>
           </div>
