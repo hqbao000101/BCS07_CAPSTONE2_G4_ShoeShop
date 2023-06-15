@@ -8,5 +8,4 @@ class User {
     this.gender = true;
   }
 
-  // todo: methods
 }

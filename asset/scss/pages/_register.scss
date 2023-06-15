@@ -183,6 +183,35 @@
   }
 }
 
+#registerModal {
+  .modal-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    p {
+      margin: 0;
+      @include testStyle($fs-24, $fw-regular, $text-primary);
+    }
+    i{
+      font-size: 24px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 5px;
+      background-color: blue;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 0 5px 5px;
+      animation: modalBorder 2s forwards;
+    }
+  }
+} 
+
 // ! responsive
 @media screen and (max-width: 767.98px) {
   #register {
@@ -207,5 +236,15 @@
         margin-top: 50px;
       }
     }
+  }
+}
+
+// ! keyframes
+@keyframes modalBorder {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }

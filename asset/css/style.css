@@ -246,6 +246,35 @@ a {
   color: #2ed573;
 }
 
+#registerModal .modal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+}
+#registerModal .modal-body p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #222222;
+}
+#registerModal .modal-body i {
+  font-size: 24px;
+}
+#registerModal .modal-body:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 5px 5px;
+  animation: modalBorder 2s forwards;
+}
+
 @media screen and (max-width: 767.98px) {
   #register .register_form {
     width: 100%;
@@ -262,6 +291,14 @@ a {
     bottom: 0;
     justify-content: flex-end;
     margin-top: 50px;
+  }
+}
+@keyframes modalBorder {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 #home_header {
