@@ -59,7 +59,7 @@
           }
         }
         &:not(:nth-child(1)):after {
-          content: "10";
+          content: "0";
           position: absolute;
           top: 0;
           right: 0;
@@ -488,6 +488,10 @@
         &:nth-child(1) {
           &:hover {
             background-color: $heart-bg;
+          }
+          &.active {
+            color: white;
+            background-color: red;
           }
         }
         &:nth-child(2) {

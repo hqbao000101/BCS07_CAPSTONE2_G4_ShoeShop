@@ -353,7 +353,7 @@ a {
   background-color: #2ed573;
 }
 #home_header .header_top .header_icon i:not(:nth-child(1)):after {
-  content: "10";
+  content: "0";
   position: absolute;
   top: 0;
   right: 0;
@@ -809,6 +809,10 @@ a {
 }
 .sales_container .sales_img .img_interact i:nth-child(1):hover {
   background-color: #ff0060;
+}
+.sales_container .sales_img .img_interact i:nth-child(1).active {
+  color: white;
+  background-color: red;
 }
 .sales_container .sales_img .img_interact i:nth-child(2) {
   transition: transform 0.7s;

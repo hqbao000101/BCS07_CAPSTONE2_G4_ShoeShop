@@ -62,7 +62,11 @@
       <div class="container">
         <div class="header_top">
           <div class="top_left">
-            <i id="showMenu" class="fa-solid fa-bars" onclick="showSideNav()"></i>
+            <i
+              id="showMenu"
+              class="fa-solid fa-bars"
+              onclick="showSideNav()"
+            ></i>
             <h1><a href="#"> G4 Shoe Shop </a></h1>
           </div>
           <div class="header_icon">
@@ -94,18 +98,36 @@
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-        <div id="overlay" class="bg-overlay d-none" onclick="hideSideNav()"></div>
+        <div
+          id="overlay"
+          class="bg-overlay d-none"
+          onclick="hideSideNav()"
+        ></div>
         <div id="sidenav" class="sidenav width-0 invisible d-none">
           <div class="sidenav_top">
-            <i id="close-icon" class="fa-solid fa-xmark" onclick="hideSideNav()"></i>
+            <i
+              id="close-icon"
+              class="fa-solid fa-xmark"
+              onclick="hideSideNav()"
+            ></i>
             <nav>
               <ul>
-                <li><a onclick="hideSideNav()" href="#" class="active">HOME</a></li>
+                <li>
+                  <a onclick="hideSideNav()" href="#" class="active">HOME</a>
+                </li>
                 <li><a onclick="hideSideNav()" href="#home_deals">DEALS</a></li>
-                <li><a onclick="hideSideNav()" href="#home_trending">TRENDING</a></li>
-                <li><a onclick="hideSideNav()" href="#home_product">PRODUCT</a></li>
-                <li><a onclick="hideSideNav()" href="#home_customer">CUSTOMER</a></li>
-                <li><a onclick="hideSideNav()" href="#home_services">SERVICES</a></li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_trending">TRENDING</a>
+                </li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_product">PRODUCT</a>
+                </li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_customer">CUSTOMER</a>
+                </li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_services">SERVICES</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -154,11 +176,13 @@
                       Premium materials and accents give modern expression to an
                       all-time favorite.
                     </p>
-                    <button
-                      class="animate__animated animate__fadeIn animate__delay-1s"
-                    >
-                      SHOP NOW
-                    </button>
+                    <a href="#home_product">
+                      <button
+                        class="animate__animated animate__fadeIn animate__delay-1s"
+                      >
+                        SHOP NOW
+                      </button>
+                    </a>
                   </div>
                   <div
                     class="carousel_img animate__animated animate__fadeIn animate__delay-1s"
@@ -1035,7 +1059,7 @@
       </div>
     </footer>
     <!-- ! back-to-top button -->
-    <a id="top" href="#">
+    <a id="top" href="#" class="invisible">
       <i class="fa-solid fa-angle-up"></i>
     </a>
 

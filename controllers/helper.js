@@ -50,7 +50,7 @@ function loopUpdateContent(arr, stt, result) {
               alt="Sales Pic ${stt}"
             />
             <div class="img_interact">
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
               <i class="fa-regular fa-images"></i>
             </div>
             <div class="img_add">

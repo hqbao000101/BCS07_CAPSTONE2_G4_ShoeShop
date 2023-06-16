@@ -45,3 +45,18 @@ promise.then((res) => {
 promise.catch((err) => {
   console.log(err);
 });
+
+
+// todo: like shoes action
+function likeShoes(shoe) {
+  shoe.classList.toggle("active");
+}
+
+// todo: hide/show back-to-top button
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    document.getElementById("top").classList.remove("invisible");
+  } else {
+    document.getElementById("top").classList.add("invisible");
+  }
+})
