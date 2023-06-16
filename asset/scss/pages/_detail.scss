@@ -1,3 +1,209 @@
+// ! home - header / navbar
+#detail_header {
+  padding: $section-padding;
+  position: relative;
+  background-color: #051883;
+  top: 0;
+  width: 100%;
+  .header_top {
+    @extend .flex-center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .top_left {
+      @extend .flex-center;
+      i {
+        display: none;
+        color: white;
+        font-size: $fs-24;
+        margin-right: 2vw;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          color: $primary-hover;
+        }
+      }
+      h1 {
+        margin: 0;
+        a {
+          color: white;
+          text-transform: uppercase;
+          font-weight: $fw-bold;
+          transition: all 0.5s;
+          &:hover {
+            color: $primary-hover;
+          }
+        }
+      }
+    }
+    .header_icon {
+      i {
+        @include iconStyle(50px, 50px, $header-icon-bg);
+        color: white;
+        font-size: $fs-14;
+        margin-left: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+          background-color: $header-bg-color;
+          &:not(:nth-child(1)):after {
+            background-color: $primary-hover;
+          }
+        }
+        &:not(:nth-child(1)):after {
+          content: "0";
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(20%, -20%);
+          transition: all 0.5s;
+          @include iconStyle($fs-24, $fs-24, $primary-color);
+          @include testStyle($fs-10, $fw-light, $text-primary);
+        }
+      }
+    }
+  }
+  .header_bottom {
+    @extend .flex-center;
+    justify-content: space-between;
+    background-color: $header-bg-color;
+    border-radius: 30px;
+    padding: 0 10px 0 30px;
+    .header_navbar {
+      width: 75%;
+      ul {
+        @extend .flex-center;
+        flex-wrap: nowrap;
+        padding: 0;
+        margin: 0;
+        li {
+          margin: 0 2%;
+          padding: 20px 0;
+          text-align: center;
+          a {
+            @include testStyle($fs-12, $fw-regular, white);
+            transition: all 0.5s;
+            &.active {
+              color: $primary-hover;
+            }
+          }
+          &:hover {
+            a {
+              color: $primary-hover;
+            }
+          }
+        }
+      }
+    }
+    .header_search {
+      @extend .flex-center;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      background-color: white;
+      padding: 5px 5px 5px 20px;
+      border-radius: 30px;
+      width: 25%;
+      i {
+        font-size: 14px;
+        &:nth-child(3) {
+          transition: all 0.5s;
+          @include iconStyle($fs-30, $fs-30, white);
+          &:hover {
+            @include iconStyle($fs-30, $fs-30, $primary-hover);
+            cursor: pointer;
+            color: white;
+          }
+        }
+      }
+      input {
+        border: none;
+        width: 60%;
+        font-size: 14px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .bg-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 90;
+  }
+  .sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    width: 70%;
+    padding: 80px 0 10px;
+    z-index: 100;
+    @extend .flex-center;
+    flex-direction: column;
+    justify-content: space-between;
+    .sidenav_top {
+      padding: 0 10px;
+      i {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: $fs-24;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          color: $primary-hover;
+        }
+      }
+      nav {
+        ul {
+          padding: 0;
+          li {
+            margin: 20px 0;
+            a {
+              @include testStyle($fs-12, $fw-bold, $text-primary);
+              transition: all 0.5s;
+              &.active {
+                color: $primary-hover;
+              }
+            }
+            &:hover {
+              a {
+                color: $primary-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sidenav_bottom {
+      padding: 0 10px;
+      .social_media {
+        a {
+          i {
+            @include iconStyle(30px, 30px, $bg-dark-theme);
+            color: white;
+            transition: all 0.5s;
+            &:hover {
+              color: $text-primary;
+              background-color: $primary-hover;
+            }
+          }
+        }
+      }
+      h6 {
+        font-weight: $fw-regular;
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+
 #navigation {
   padding: 23px;
   .navigation_content {
@@ -5,14 +211,21 @@
       text-decoration: none;
       margin-right: 5px;
       display: inline-block;
-      a {
-        @include testStyle($fs-13, $fw-medium, $text-fade-hover);
+      &:nth-child(1) {
+        a {
+          &:hover {
+            color: $text-primary;
+          }
+        }
       }
     }
-    i {
-      font-size: 6px;
-      padding: 4px;
+    a {
+      @include testStyle($fs-13, $fw-medium, $text-fade-hover);
     }
+  }
+  i {
+    font-size: 6px;
+    padding: 4px;
   }
 }
 
@@ -77,10 +290,11 @@
             border-radius: 100%;
             background: $bg-fade;
             @include testStyle($fs-14, $fw-bold, #848484);
+            transition: all 0.5s;
             &:hover {
-              background-color: #60ff00;
+              background-color: $heart-bg;
               i {
-                color: black;
+                color: white;
               }
             }
           }
@@ -154,6 +368,9 @@
                 padding: 0;
                 font-size: $fs-18;
                 color: #e7e8eb;
+                &:hover {
+                  color: black;
+                }
               }
             }
             .number_quality {
@@ -194,8 +411,9 @@
             border-radius: 5px;
             padding: 15px 0;
             &:hover {
-              background-color: #60ff00;
+              background-color: $primary-color;
               color: black;
+              box-shadow: $bs-medium;
             }
           }
         }
@@ -360,8 +578,10 @@
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 24px;
+          transition: all 0.5s;
           &:hover {
-            background-color: #60ff00;
+            background-color: $primary-color;
+            box-shadow: $bs-small;
           }
         }
         .review_form {
@@ -371,6 +591,7 @@
             height: 46px;
             padding: 8px 16px;
             width: 100%;
+            resize: none;
           }
           label {
             margin-bottom: 8px;
@@ -547,6 +768,13 @@
             border: 2px solid #f6f6f6;
             border-radius: 50%;
             background-color: white;
+            transition: all 0.5s;
+            box-shadow: $bs-small;
+            &:hover {
+              background-color: $primary-color;
+              border-color: $primary-color;
+              box-shadow: $bs-medium;
+            }
           }
           .owl-prev {
             top: 40%;
@@ -563,9 +791,11 @@
 }
 
 #link_list {
+  padding: 100px 0;
   .list_title {
     font-size: 22px;
     font-weight: $fw-bold;
+    margin-top: 0 !important;
   }
   .list_carousel {
     .block_content {
@@ -645,7 +875,48 @@
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  // todo: home_header
+  #detail_header {
+    .header_top {
+      .top_left {
+        i {
+          display: block;
+        }
+      }
+    }
+    .header_bottom {
+      padding: 10px;
+      justify-content: center;
+      .header_navbar {
+        display: none;
+      }
+      .header_search {
+        width: 70%;
+        input {
+          flex-grow: 1;
+          margin: 0 5%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px) {
+  #detail_header {
+    .header_top {
+      flex-direction: column;
+      .header_icon {
+        margin-top: 20px;
+        i {
+          margin: 0;
+          &:nth-child(2) {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
   #product_review {
     .review_body {
       align-items: center;

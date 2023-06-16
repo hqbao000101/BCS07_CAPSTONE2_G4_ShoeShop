@@ -48,7 +48,92 @@
   </head>
 
   <body>
-    <header></header>
+    <header id="detail_header">
+      <div class="container">
+        <div class="header_top">
+          <div class="top_left">
+            <i
+              id="showMenu"
+              class="fa-solid fa-bars"
+              onclick="showSideNav()"
+            ></i>
+            <h1><a href="#"> G4 Shoe Shop </a></h1>
+          </div>
+          <div class="header_icon">
+            <a href="./views/register.html" title="Register Here">
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <nav class="header_navbar">
+            <ul>
+              <li><a href="../index.html" class="active">HOME</a></li>
+              <li><a href="#home_deals">DEALS</a></li>
+              <li><a href="#home_trending">TRENDING</a></li>
+              <li><a href="#home_product">PRODUCT</a></li>
+              <li><a href="#home_customer">CUSTOMER</a></li>
+              <li><a href="#home_services">SERVICES</a></li>
+            </ul>
+          </nav>
+          <div class="header_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              id="search_place"
+              type="text"
+              placeholder="Find your shoes"
+            />
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div
+          id="overlay"
+          class="bg-overlay d-none"
+          onclick="hideSideNav()"
+        ></div>
+        <div id="sidenav" class="sidenav width-0 invisible d-none">
+          <div class="sidenav_top">
+            <i
+              id="close-icon"
+              class="fa-solid fa-xmark"
+              onclick="hideSideNav()"
+            ></i>
+            <nav>
+              <ul>
+                <li>
+                  <a onclick="hideSideNav()" href="../index.html" class="active">HOME</a>
+                </li>
+                <li><a onclick="hideSideNav()" href="#home_deals">DEALS</a></li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_trending">TRENDING</a>
+                </li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_product">PRODUCT</a>
+                </li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_customer">CUSTOMER</a>
+                </li>
+                <li>
+                  <a onclick="hideSideNav()" href="#home_services">SERVICES</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidenav_bottom text-center">
+            <div class="social_media">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <h6>Copyright &copy; 2023 - G4</h6>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section id="navigation">
         <div class="container">
@@ -974,7 +1059,108 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- ! home - footer -->
+    <footer id="home_footer">
+      <!-- todo: footer - top -->
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <!-- todo: column 1 -->
+            <div
+              class="col-md-6 col-lg-3 text-lg-start text-center order-lg-1 order-2 mb-5 mb-md-0"
+            >
+              <h3>COMPANY</h3>
+              <ul class="p-0">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Store Locations</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <!-- todo: column 2 -->
+            <div class="col-lg-6 text-center pb-5 py-lg-0 order-lg-2 order-1">
+              <h3>SIGN UP NOW AND GET 10% OFF</h3>
+              <p>
+                Be the first to know about our new arrivals and exclusive offers
+              </p>
+              <form>
+                <input type="email" placeholder="Your Email Address..." />
+                <i class="fa-solid fa-arrow-right"></i>
+              </form>
+              <div class="footer_media">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-vimeo-v"></i>
+                </a>
+              </div>
+            </div>
+            <!-- todo: column 3 -->
+            <div
+              class="col-md-6 col-lg-3 text-lg-end text-center order-3 order-lg-3"
+            >
+              <h3>HELP</h3>
+              <ul class="p-0">
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- todo: footer - bottom -->
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- todo: bottom-col-1 -->
+            <div
+              class="col-md-6 col-lg-3 text-md-center text-lg-start order-2 order-md-2 order-lg-1 mb-md-0 mb-4"
+            >
+              <a href="#">
+                <span>Privacy Policy</span>
+              </a>
+              <a href="#">
+                <span>Terms & Conditions</span>
+              </a>
+            </div>
+            <!-- todo: bottom-col-2 -->
+            <div
+              class="col-lg-6 text-md-center order-1 order-md-1 order-lg-2 mb-lg-0 mb-5"
+            >
+              <img src="../asset/img/amex.png" alt="American Express" />
+              <img src="../asset/img/ApplePay.png" alt="Apple Pay" />
+              <img src="../asset/img/discover.png" alt="Discover Card" />
+              <img src="../asset/img/JCB.png" alt="JCB Card" />
+              <img src="../asset/img/Master.png" alt="Master Card" />
+              <img src="../asset/img/Paypal.png" alt="Pay Pal" />
+              <img src="../asset/img/Visa.png" alt="Visa" />
+            </div>
+            <!-- todo: bottom-col-3 -->
+            <div
+              class="col-md-6 col-lg-3 text-lg-end text-md-center order-2 order-md-3 order-lg-3"
+            >
+              <p>&copy; 2023 G4 SHOE SHOP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ! back-to-top button -->
+    <a id="top" href="#" class="invisible">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
 
     <!-- ! Jquery -->
     <script
@@ -1008,9 +1194,6 @@
     ></script>
 
     <!-- ! JS -->
-    <script src="../models/Shoe.js"></script>
-    <script src="../models/User.js"></script>
-    <script src="../controllers/validation.js"></script>
     <script src="../controllers/helper.js"></script>
     <script src="../controllers/main.js"></script>
     <script src="../controllers/detail.js"></script>
