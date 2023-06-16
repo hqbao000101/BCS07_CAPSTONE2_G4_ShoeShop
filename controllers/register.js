@@ -36,6 +36,8 @@ document.getElementById("create").onclick = () => {
   promise.then((res) => {
     document.getElementById("register-result").innerHTML =
       "Register Account Successfully";
+    document.querySelector(".modal-body .loadingBar").style.backgroundColor =
+      "green";
     document
       .querySelector(".modal-body i.text-success")
       .classList.remove("d-none");
@@ -51,6 +53,8 @@ document.getElementById("create").onclick = () => {
   promise.catch((err) => {
     document.getElementById("email-alert").innerHTML =
       "This email existed. Please try another one!";
+    document.querySelector(".modal-body .loadingBar").style.backgroundColor =
+      "red";
     document.getElementById("register-result").innerHTML = "Email Existed";
     document
       .querySelector(".modal-body i.text-success")

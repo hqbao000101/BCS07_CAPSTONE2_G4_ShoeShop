@@ -262,12 +262,10 @@ a {
 #registerModal .modal-body i {
   font-size: 24px;
 }
-#registerModal .modal-body:after {
-  content: "";
-  display: block;
+#registerModal .modal-body .loadingBar {
   width: 0;
   height: 5px;
-  background-color: blue;
+  background-color: #2ed573;
   position: absolute;
   bottom: 0;
   left: 0;

@@ -197,12 +197,10 @@
     i{
       font-size: 24px;
     }
-    &:after {
-      content: '';
-      display: block;
+    .loadingBar {
       width: 0;
       height: 5px;
-      background-color: blue;
+      background-color: $primary-hover;
       position: absolute;
       bottom: 0;
       left: 0;
