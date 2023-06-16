@@ -145,7 +145,7 @@
             </span>
             <i class="fa-solid fa-circle"></i>
             <span>
-              <a href="#"> Converse Run Star Hike </a>
+              <a href="#" id="name"> Converse Run Star Hike </a>
             </span>
           </div>
         </div>
@@ -154,10 +154,10 @@
         <div class="container">
           <div class="row">
             <div class="product-left col-xxl-8 col-lg-7 col-md-6">
-              <div class="product_img mb-4">
+              <div class="product_img mb-4 d-flex">
                 <img
                   src="../asset/img/flash_01.png"
-                  class="img-fluid mx-auto"
+                  class="img-fluid mx-auto" id="img"
                 />
               </div>
               <div class="product_tab">
@@ -425,7 +425,7 @@
                 <div
                   class="product_header d-flex align-items-center justify-content-between mb-10"
                 >
-                  <h1>Converse Run Star Hike</h1>
+                  <h1 id="shoeName"></h1>
                   <div class="product_wishlist">
                     <a class="wishlist_btn d-flex align-items-center">
                       <i class="fa-solid fa-heart"></i>
@@ -458,37 +458,7 @@
                     <div class="size_output my-3">
                       Size: <span id="sizeInput">35</span>
                     </div>
-                    <div class="select_size row row-cols-4 px-1">
-                      <div class="px-2">
-                        <div class="size_item mb-3 active">35</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">36</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">37</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">38</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">39</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">40</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">41</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">42</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">43</div>
-                      </div>
-                      <div class="px-2">
-                        <div class="size_item mb-3">44</div>
-                      </div>
+                    <div class="select_size row row-cols-4 px-1" id="available-size">
                     </div>
                   </div>
                   <div class="product_quality mt-3 mb-4">
@@ -804,8 +774,7 @@
               RELATED PRODUCT
             </div>
             <div class="related_carousel">
-              <div class="owl-carousel">
-                <div class="respone_img">
+              <div class="owl-carousel" id="carouselShoe">
                   <img
                     src="../asset/img/flash_01.png"
                     class="img-fluid mx-auto"
@@ -974,7 +943,10 @@
                     </div>
                     <div class="price_box">$100.00</div>
                   </div>
-                </div>
+                </div> -->
+                
+                
+                <!-- ! ------------------------- -->
               </div>
             </div>
           </div>
