@@ -40,7 +40,7 @@ promiseDetail.then((res) => {
       </div>
       <!-- todo: sale-info -->
       <div class="sales_info">
-        <a href="./detail.html">
+        <a href="./detail.html?id=${relatedProducts[i].id}">
           <h4>${relatedProducts[i].name}</h4>
         </a>
         <div class="info_stars">
