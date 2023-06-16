@@ -9,12 +9,12 @@ promise.then((res) => {
 
   // todo: initialize variables containing shoe items
   let stt = 1;
-  let all = '';
-  let men = '';
-  let women = '';
-  let adidas = '';
-  let nike = '';
-  let converse = '';
+  let all = "";
+  let men = "";
+  let women = "";
+  let adidas = "";
+  let nike = "";
+  let converse = "";
 
   // todo: update content for all shoe section
   all = loopUpdateContent(shoe_arr, stt, all);
@@ -38,7 +38,7 @@ promise.then((res) => {
   // todo: update content for converse shoe section
   let converse_shoe_arr = filterCategory(shoe_arr, "vans converse");
   converse = loopUpdateContent(converse_shoe_arr, stt, converse);
-  
+
   // todo: rendering shoes following shoes categories
   renderShoes([all, men, women, adidas, nike, converse]);
 });

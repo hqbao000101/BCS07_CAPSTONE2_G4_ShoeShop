@@ -1,3 +1,19 @@
+// todo: show side navbar
+function showSideNav() {
+  document.getElementById("overlay").classList.remove("d-none");
+  document.getElementById("sidenav").classList.remove("width-0");
+  document.getElementById("sidenav").classList.remove("invisible");
+  document.getElementById("sidenav").classList.remove("d-none");
+}
+
+// todo: hide side navbar
+function hideSideNav() {
+  document.getElementById("overlay").classList.add("d-none");
+  document.getElementById("sidenav").classList.add("width-0");
+  document.getElementById("sidenav").classList.add("invisible");
+  document.getElementById("sidenav").classList.add("d-none");
+}
+
 // todo: render-home-shoes
 function renderShoes(arr) {
   let categories_list = ["all", "men", "women", "adidas", "nike", "converse"];

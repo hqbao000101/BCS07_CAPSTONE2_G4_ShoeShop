@@ -62,7 +62,7 @@
       <div class="container">
         <div class="header_top">
           <div class="top_left">
-            <i id="showMenu" class="fa-solid fa-bars"></i>
+            <i id="showMenu" class="fa-solid fa-bars" onclick="showSideNav()"></i>
             <h1><a href="#"> G4 Shoe Shop </a></h1>
           </div>
           <div class="header_icon">
@@ -94,18 +94,18 @@
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
-        <div class="bg-overlay d-none"></div>
-        <div class="sidenav width-0 visible d-none">
+        <div id="overlay" class="bg-overlay d-none" onclick="hideSideNav()"></div>
+        <div id="sidenav" class="sidenav width-0 invisible d-none">
           <div class="sidenav_top">
-            <i id="close-icon" class="fa-solid fa-xmark"></i>
+            <i id="close-icon" class="fa-solid fa-xmark" onclick="hideSideNav()"></i>
             <nav>
               <ul>
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#home_deals">DEALS</a></li>
-                <li><a href="#home_trending">TRENDING</a></li>
-                <li><a href="#home_product">PRODUCT</a></li>
-                <li><a href="#home_customer">CUSTOMER</a></li>
-                <li><a href="#home_services">SERVICES</a></li>
+                <li><a onclick="hideSideNav()" href="#" class="active">HOME</a></li>
+                <li><a onclick="hideSideNav()" href="#home_deals">DEALS</a></li>
+                <li><a onclick="hideSideNav()" href="#home_trending">TRENDING</a></li>
+                <li><a onclick="hideSideNav()" href="#home_product">PRODUCT</a></li>
+                <li><a onclick="hideSideNav()" href="#home_customer">CUSTOMER</a></li>
+                <li><a onclick="hideSideNav()" href="#home_services">SERVICES</a></li>
               </ul>
             </nav>
           </div>
