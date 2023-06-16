@@ -68,3 +68,8 @@ document.getElementById("create").onclick = () => {
     }, 2000);
   });
 };
+
+// todo: login
+document.getElementById("login-request").onclick = () => {
+  alert("Login page is still in progress. Please visit later!");
+}
