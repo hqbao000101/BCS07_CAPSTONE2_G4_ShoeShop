@@ -35,19 +35,958 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- ! Owl carousel  -->
+    <link rel="stylesheet" href="../asset/library/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../asset/library/owl.theme.default.min.css" />
+
     <!-- ! CSS -->
-    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
   </head>
 
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <section id="navigation">
+        <div class="container">
+          <div class="navigation_content">
+            <span><a href="../index.html">Home</a></span>
+            <i class="fa-solid fa-circle"></i>
+            <span>
+              <a href="#">Men</a>
+            </span>
+            <i class="fa-solid fa-circle"></i>
+            <span>
+              <a href="#"> Converse Run Star Hike </a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="product">
+        <div class="container">
+          <div class="row">
+            <div class="product-left col-xxl-8 col-lg-7 col-md-6">
+              <div class="product_img mb-4">
+                <img
+                  src="../asset/img/flash_01.png"
+                  class="img-fluid mx-auto"
+                />
+              </div>
+              <div class="product_tab">
+                <!-- nav tab -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="description-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#description"
+                      type="button"
+                      role="tab"
+                      aria-controls="description"
+                      aria-selected="true"
+                    >
+                      DESCRIPTION
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="delivery-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#delivery"
+                      type="button"
+                      role="tab"
+                      aria-controls="delivery"
+                      aria-selected="false"
+                    >
+                      DELIVERY POLICY
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="shipping-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#shipping"
+                      type="button"
+                      role="tab"
+                      aria-controls="shipping"
+                      aria-selected="false"
+                    >
+                      SHIPPING & RETURN
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="custom-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#custom"
+                      type="button"
+                      role="tab"
+                      aria-controls="custom"
+                      aria-selected="false"
+                    >
+                      CUSTOM TAB
+                    </button>
+                  </li>
+                </ul>
+                <!-- tab content -->
+                <div class="tab-content" id="myTabContent">
+                  <!-- todo: tab 1 - description products -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="description"
+                    role="tabpanel"
+                    aria-labelledby="description-tab"
+                  >
+                    <div class="row gy-5">
+                      <div>
+                        <p class="des des_1">
+                          <span
+                            >Captivate with this shirt’s versatile urban look
+                            that works as well at happy hour as it does in the
+                            back yard. The real mother of pearl buttons and
+                            embroidered crocodile complete its elegant
+                            appeal.Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridicu lus mus.
+                            Donec quam felis, ultri cies nec, pellentesque eu,
+                            pretium quis, sem. Nulla consequat massa quis
+                            enim.</span
+                          >
+                        </p>
+                        <img
+                          alt=""
+                          src="https://cdn.shopify.com/s/files/1/0256/4594/0810/files/image_des.png?v=1615432854"
+                        />
+                        <ul class="style_type_1">
+                          <li>
+                            MACHINE WASH AT MAX.TEMP. 30° C - NORMAL PROCESS
+                          </li>
+                          <li>DO NOT BLEACH</li>
+                          <li>DO NOT TUMBLE DRY</li>
+                          <li>IRON AT MAX. TEMP. OF 110° C WITHOUT STEAM</li>
+                          <li>DO NOT DRY CLEAN</li>
+                        </ul>
+                        <br />
+                        <h4>Sample Ordered Lista</h4>
+                        <ol class="style_type_2">
+                          <li>Comodous in tempor ullamcorper miaculis</li>
+                          <li>
+                            Pellentesque vitae neque mollis urna mattis laoreet.
+                          </li>
+                          <li>Divamus sit amet purus justo.</li>
+                          <li>
+                            Proin molestie egestas orci ac suscipit risus
+                            posuere loremous
+                          </li>
+                        </ol>
+                        <br />
+                        <h4>Sample Paragraph Text</h4>
+                        <p class="des des_2">
+                          Faded short sleeves t-shirt with high neckline. Soft
+                          and stretchy material for a comfortable fit.
+                          Accessorize with a straw hat and you're ready for
+                          summer!Faded short sleeves t-shirt with high neckline.
+                          Soft and stretchy material for a comfortable fit.
+                          Accessorize with a straw hat and you're ready for
+                          summe!Aenean massa. Cum sociis natoque penatibus et
+                          magnis dis parturient montes, nascetur ridicu lus mus.
+                          Donec quam felis, ultri cies nec, pellentesque eu,
+                          pretium quis, sem. Nulla consequat massa quis enim.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: tab 2 - delivery -->
+                  <div
+                    class="tab-pane fade"
+                    id="delivery"
+                    role="tabpanel"
+                    aria-labelledby="delivery-tab"
+                  >
+                    <div class="row gy-5">
+                      <div class="block_text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Duis vulputate, lectus ac pretium maximus, magna
+                          neque fermentum arcu, ut pulvinar arcu erat vel massa.
+                          Pellentesque ac arcu blandit, vestibulum tortor eget,
+                          dictum magna. Curabitur sit amet metus nulla.
+                          Pellentesque et augue et urna volutpat vestibulum
+                          vitae eget ligula. Maecenas mi augue, faucibus
+                          scelerisque facilisis in, dignissim vitae justo. Sed
+                          venenatis lectus et leo malesuada iaculis. Nunc
+                          lacinia arcu id elementum rhoncus. Duis tempor, enim
+                          vel vulputate interdum, magna sapien lacinia enim, nec
+                          lobortis quam enim eu erat. Aenean faucibus ex vitae
+                          nibh accumsan ullamcorper. Sed a orci augue. Maecenas
+                          porttitor venenatis semper.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: tab 3 - shipping -->
+                  <div
+                    class="tab-pane fade"
+                    id="shipping"
+                    role="tabpanel"
+                    aria-labelledby="shipping-tab"
+                  >
+                    <div class="row gy-5">
+                      <div class="block_text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Nulla luctus libero quis mauris vestibulum
+                          dapibus.
+                        </p>
+                        <p>
+                          Maecenas ullamcorper erat mi, vel consequat enim
+                          suscipit at. Pellentesque a elit at elit
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- todo: tab 4 - custom -->
+                  <div
+                    class="tab-pane fade"
+                    id="custom"
+                    role="tabpanel"
+                    aria-labelledby="custom-tab"
+                  >
+                    <div class="row gy-5">
+                      <ul class="product-single__customtab list-unstyled">
+                        <li>
+                          <div class="row align-items-center p-1 pt-1 pb-1">
+                            <div class="title col-4">
+                              Lorem ipsum dolor sit amet
+                            </div>
+                            <div class="content col-8">
+                              <p>
+                                Maecenas ullamcorper erat mi, vel consequat enim
+                                suscipit at.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="row align-items-center p-1 pt-1 pb-1">
+                            <div class="title col-4">
+                              Quisque in felis ut tellus
+                            </div>
+                            <div class="content col-8">
+                              <p>
+                                Pellentesque a elit at elit auctor tempus sed
+                                vitae mi
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="row align-items-center p-1 pt-1 pb-1">
+                            <div class="title col-4">Morbi blandit auctor</div>
+                            <div class="content col-8">
+                              <p>
+                                Vestibulum sollicitudin tortor dui, quis aliquet
+                                sapien convallis sed.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="row align-items-center p-1 pt-1 pb-1">
+                            <div class="title col-4">
+                              Sed sit amet risus quis velit lacinia gravida.
+                            </div>
+                            <div class="content col-8">
+                              <p>
+                                Aenean interdum elementum arcu. Vivamus purus
+                                lorem, semper quis libero et.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="row align-items-center p-1 pt-1 pb-1">
+                            <div class="title col-4">
+                              Morbi dictum orci neque.
+                            </div>
+                            <div class="content col-8">
+                              <p>
+                                Curabitur vehicula tellus sit amet neque
+                                placerat, vel sagittis.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-right col-xxl-4 col-lg-5 col-md-6 g-0">
+              <div class="position-sticky">
+                <div
+                  class="product_header d-flex align-items-center justify-content-between mb-10"
+                >
+                  <h1>Converse Run Star Hike</h1>
+                  <div class="product_wishlist">
+                    <a class="wishlist_btn d-flex align-items-center">
+                      <i class="fa-solid fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="product_review mb-3 d-flex align-items-center">
+                  <div class="product_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <a href="#" class="btn_review">VIEW ALL REVIEWS</a>
+                </div>
+                <div class="product_offer">
+                  <div class="product_price d-flex align-items-center mb-2">
+                    <span id="price">$87.00</span>
+                  </div>
+                  <div class="product_description">
+                    Captivate with this shirt’s versatile urban look that works
+                    as well at happy hour as it does in the back yard. The real
+                    mother of pearl buttons and embroidered crocodile complete
+                    its elegant appeal.Lorem ipsum...
+                  </div>
+                </div>
+                <div class="product_cart">
+                  <div class="product_size">
+                    <div class="size_output my-3">
+                      Size: <span id="sizeInput">35</span>
+                    </div>
+                    <div class="select_size row row-cols-4 px-1">
+                      <div class="px-2">
+                        <div class="size_item mb-3 active">35</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">36</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">37</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">38</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">39</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">40</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">41</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">42</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">43</div>
+                      </div>
+                      <div class="px-2">
+                        <div class="size_item mb-3">44</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_quality mt-3 mb-4">
+                    <span class="quality_text">Quantity:</span>
+                    <div class="quality_number row gap-2 g-0 py-3 px-0">
+                      <div class="number_products col-6 col-md-3">
+                        <div
+                          class="numberProduct d-flex align-items-center row g-0"
+                        >
+                          <div class="minus col">
+                            <button class="btn-change">-</button>
+                          </div>
+                          <div class="number_quality col-4">
+                            <span class="number">1</span>
+                          </div>
+                          <div class="plus col">
+                            <button class="btn-change">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product_addToBag col-sm-6 col-md-8">
+                        <button>add to bag</button>
+                      </div>
+                    </div>
+                    <div class="product_buyItNow mb-2">
+                      <button>Buy It Now</button>
+                    </div>
+                    <div
+                      class="product_sharebar d-flex align-items-center mt-4"
+                    >
+                      <div class="share">
+                        <button>
+                          <i class="fa-solid fa-share-nodes"></i
+                          ><span>Share</span>
+                        </button>
+                      </div>
+                      <div class="ask-a-question">
+                        <button>
+                          <i class="fa-solid fa-question"></i
+                          ><span>ask a question</span>
+                        </button>
+                      </div>
+                      <div class="faq">
+                        <button>
+                          <i class="fa-regular fa-message"></i><span>faq</span>
+                        </button>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+                <div class="product_payment mb-4">
+                  <div class="payment_text mb-3">GUARANTEED SAFE CHECKOUT:</div>
+                  <div class="payment">
+                    <img src="../asset/img/blog_img1.png" alt="" />
+                  </div>
+                </div>
+                <div class="shipping">
+                  <div class="ship_time d-flex align-items-center mb-2">
+                    <i class="fa-regular fa-clock"></i
+                    ><span class="px-2"
+                      >Orders ship within 5 to 10 business days.</span
+                    >
+                  </div>
+                  <div class="ship_truck d-flex align-items-center">
+                    <i class="fa-solid fa-truck-fast"></i
+                    ><span class="px-2"
+                      >Hoorey ! This item ships free to the US</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section id="product_policy">
+        <div class="container">
+          <div class="row">
+            <div class="free_ship col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="policy_item d-flex">
+                <div
+                  class="policy_icon d-inline-flex align-items-center justify-content-center position-relative mb-md-3 mb-sm-0"
+                >
+                  <img
+                    class="ls-is-cached lazyloaded"
+                    data-src="//cdn.shopify.com/s/files/1/0270/4575/7012/files/p-8_281c9970-8c95-4fd5-8905-02fb0785a530_200x.png?v=1681973856"
+                    alt="icon_policy"
+                    src="//cdn.shopify.com/s/files/1/0270/4575/7012/files/p-8_281c9970-8c95-4fd5-8905-02fb0785a530_200x.png?v=1681973856"
+                  />
+                </div>
+                <div class="policy_text">
+                  <div class="title-policy">FREE SHIPPING</div>
+                  <div class="desc-policy mt-2">
+                    <p>Free shipping order above $200</p>
+                  </div>
+                  <a href="#" class="">
+                    Learn More
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="support col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="policy_item d-flex">
+                <div
+                  class="policy_icon d-inline-flex align-items-center justify-content-center position-relative mb-md-3 mb-sm-0"
+                >
+                  <img
+                    class="ls-is-cached lazyloaded"
+                    data-src="//cdn.shopify.com/s/files/1/0270/4575/7012/files/p-12_a9390ac8-1956-4c99-9e05-cd5d86b56260_200x.png?v=1681973878"
+                    alt="icon_policy"
+                    src="//cdn.shopify.com/s/files/1/0270/4575/7012/files/p-12_a9390ac8-1956-4c99-9e05-cd5d86b56260_200x.png?v=1681973878"
+                  />
+                </div>
+                <div class="policy_text">
+                  <div class="title-policy">SUPPORT 24/7</div>
+                  <div class="desc-policy mt-2">
+                    <p>Contact us 24 hours a day, 7 days a week</p>
+                  </div>
+                  <a href="#" class="">
+                    Learn More
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="return col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="policy_item d-flex">
+                <div
+                  class="policy_icon d-inline-flex align-items-center justify-content-center position-relative mb-md-3 mb-sm-0"
+                >
+                  <img
+                    class="ls-is-cached lazyloaded"
+                    data-src="//cdn.shopify.com/s/files/1/0270/4575/7012/files/p-13_200x.png?v=1681973899"
+                    alt="icon_policy"
+                    src="//cdn.shopify.com/s/files/1/0270/4575/7012/files/p-13_200x.png?v=1681973899"
+                  />
+                </div>
+                <div class="policy_text">
+                  <div class="title-policy">7 DAYS RETURN</div>
+                  <div class="desc-policy mt-2">
+                    <p>Return it within 30 days for an exchange.</p>
+                  </div>
+                  <a href="#" class="">
+                    Learn More
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="product_review">
+        <div class="container">
+          <div class="clearfix"></div>
+          <div class="review_body d-flex pt-5 pb-5">
+            <div class="review_header">
+              <h2>CUSTOMER REVIEWS</h2>
+              <div class="stars">
+                <div class="stars_summary">
+                  <div class="summary_inner">
+                    <div class="summary_stars mb-3">
+                      <span class="star"><i class="fa-solid fa-star"></i></span>
+                      <span class="star"><i class="fa-solid fa-star"></i></span>
+                      <span class="star"><i class="fa-solid fa-star"></i></span>
+                      <span class="star"><i class="fa-solid fa-star"></i></span>
+                      <span class="star"><i class="fa-solid fa-star"></i></span>
+                      <span class="star_average">5.00 out of 5</span>
+                    </div>
+                    <div class="summary_text">Based on 1 review</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review_history">
+                <div class="rating_5">
+                  <div class="five-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="history_bar">
+                    <div class="bar_content" style="width: 100%"></div>
+                  </div>
+                  <div class="jdgm-histogram__frequency">1</div>
+                </div>
+                <div class="rating_4">
+                  <div class="four-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="history_bar">
+                    <div class="bar_content" style="width: 0%"></div>
+                  </div>
+                  <div class="jdgm-histogram__frequency">0</div>
+                </div>
+                <div class="rating_3">
+                  <div class="three-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="history_bar">
+                    <div class="bar_content" style="width: 0%"></div>
+                  </div>
+                  <div class="jdgm-histogram__frequency">0</div>
+                </div>
+                <div class="rating_2">
+                  <div class="two-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="history_bar">
+                    <div class="bar_content" style="width: 0%"></div>
+                  </div>
+                  <div class="jdgm-histogram__frequency">0</div>
+                </div>
+                <div class="rating_1">
+                  <div class="one-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="history_bar">
+                    <div class="bar_content" style="width: 0%"></div>
+                  </div>
+                  <div class="jdgm-histogram__frequency">0</div>
+                </div>
+              </div>
+              <div class="write_review">
+                <button id="writeReview">write a review</button>
+                <div class="review_form"></div>
+              </div>
+            </div>
+            <div class="review_body_text">
+              <div class="review_types">
+                <div class="review-actions">
+                  <div class="sort-wrapper">
+                    <div class="sort-dropdown-wrapper">
+                      <select
+                        class="jdgm-sort-dropdown"
+                        aria-label="Sort dropdown"
+                      >
+                        <option value="most-recent">Most Recent</option>
+                        <option value="highest-rating">Highest Rating</option>
+                        <option value="lowest-rating">Lowest Rating</option>
+                        <option value="with-pictures">Only Pictures</option>
+                        <option value="pictures-first">Pictures First</option>
+                        <option value="videos-first">Videos First</option>
+                        <option value="most-helpful">Most Helpful</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review_info">
+                <hr />
+                <div class="user_review d-flex">
+                  <div class="user_header">
+                    <div class="user_info">
+                      <div class="user_avatar">
+                        <i class="fa-regular fa-user"></i>
+                      </div>
+                      <div class="user_name pb-2">C.B</div>
+                    </div>
+                    <div class="user_rating">
+                      <div class="rev_rating d-flex pb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="rev_time">20/06/2023</div>
+                    </div>
+                  </div>
+                  <div class="rev_content pt-3">
+                    <div class="rev_title">Great Shoes</div>
+                    <div class="rev_text">
+                      <p>
+                        Yo la pedí porque necesitaba para mi trabajo una manga
+                        no tan corta, y en la foto se veía perfecta, pero cuando
+                        llegó no me sirvió es lo que no tengo permitido tener en
+                        mi trabajo, así que perdí mi compra y no la puedo
+                        devolver porque la lavé antes de ponermela.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="related_product">
+        <div class="container">
+          <div class="ProductRelated">
+            <div class="related_text align-items-center text-center">
+              RELATED PRODUCT
+            </div>
+            <div class="related_carousel">
+              <div class="owl-carousel">
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+                <div class="respone_img">
+                  <img
+                    src="../asset/img/flash_01.png"
+                    class="img-fluid mx-auto"
+                  />
+                  <div class="product_info">
+                    <div class="product_title">Neumel GRAYBROWN Snow</div>
+                    <div class="preview_star">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="price_box">$100.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section id="link_list">
+        <div class="container">
+          <div class="list_title text-center mt-5 mb-5">
+            BROWSE COLLECTIONS FOR MORE INSPRIRATION
+          </div>
+          <div class="list_carousel">
+            <div class="row">
+              <div class="block_content col-md-4 col-lg-2">
+                <div class="block_img">
+                  <a href="#">
+                    <img src="../asset/img/carousel-list1.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="block_text text-center align-items-center">
+                  <a href="#">Running Shoes</a>
+                  <div class="sub-text mt-2">22 products</div>
+                </div>
+              </div>
+              <div class="block_content col-md-4 col-lg-2">
+                <div class="block_img">
+                  <a href="#">
+                    <img src="../asset/img/carousel-list2.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="block_text text-center align-items-center">
+                  <a href="#">Winter Boots</a>
+                  <div class="sub-text mt-2">22 products</div>
+                </div>
+              </div>
+              <div class="block_content col-md-4 col-lg-2">
+                <div class="block_img">
+                  <a href="#">
+                    <img src="../asset/img/carousel-list3.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="block_text text-center align-items-center">
+                  <a href="#">Sandals</a>
+                  <div class="sub-text mt-2">22 products</div>
+                </div>
+              </div>
+              <div class="block_content col-md-4 col-lg-2">
+                <div class="block_img">
+                  <a href="#">
+                    <img src="../asset/img/carousel-list4.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="block_text text-center align-items-center">
+                  <a href="#">Kid Shoes</a>
+                  <div class="sub-text mt-2">22 products</div>
+                </div>
+              </div>
+              <div class="block_content col-md-4 col-lg-2">
+                <div class="block_img">
+                  <a href="#">
+                    <img src="../asset/img/carousel-list5.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="block_text text-center align-items-center">
+                  <a href="#">Skate Shoes</a>
+                  <div class="sub-text mt-2">22 products</div>
+                </div>
+              </div>
+              <div class="block_content col-md-4 col-lg-2">
+                <div class="block_img">
+                  <a href="#">
+                    <img src="../asset/img/carousel-list6.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="block_text text-center align-items-center">
+                  <a href="#">Sneakers</a>
+                  <div class="sub-text mt-2">22 products</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+
+    <!-- ! Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ! Owl carousel  -->
+    <script src="../asset/library/owl.carousel.min.js"></script>
+
     <!-- ! Bootstrap JavaScript Libraries -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -74,5 +1013,6 @@
     <script src="../controllers/validation.js"></script>
     <script src="../controllers/helper.js"></script>
     <script src="../controllers/main.js"></script>
+    <script src="../controllers/detail.js"></script>
   </body>
 </html>
